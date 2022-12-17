@@ -15,6 +15,6 @@ public class AutoAppConfigTest {
         AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(AutoAppConfig.class);
 
         MemberService memberService = ac.getBean(MemberService.class);
-            assertThat(memberService).isInstanceOf(MemberService.class);
+        assertThat(memberService).isInstanceOf(MemberService.class);
     }
 }
